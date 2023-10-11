@@ -3,9 +3,16 @@
         max-width: 450px;
     }
 
+    .row{
+        position: relative;
+    }
+
     .row button{
-        padding: 6px 26px;
-        font-size: 14px;
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        padding: 6px 25px;
+        font-size: 15px;
         font-weight: 500;
         color: red;
     } 
