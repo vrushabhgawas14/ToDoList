@@ -2,4 +2,11 @@
     .todo-app{
         max-width: 450px;
     }
+
+    .row button{
+        padding: 6px 26px;
+        font-size: 14px;
+        font-weight: 500;
+        color: red;
+    } 
 }
