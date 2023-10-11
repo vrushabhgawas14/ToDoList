@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira code',sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg,#04617a,#4f0b99);
+    padding: 10px;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    background: rgba(219, 185, 165, 0.342);
+    padding: 40px 30px 70px;
+    border-radius: 15px;
+}
+
+.todo-app h2{
+    background: linear-gradient(225deg,#04607ae7,#2e045acc  ) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;;
+    padding: 3px;
+    color: wheat;
+    border-radius: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(202, 187, 187, 0.938);
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 30px;
+}
+
+.row input{
+    flex: 1;
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 6px;
+    font-weight:600;
+    color: #031552;
+    font-size: 18px;
+}
+
+.row button{
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    background: linear-gradient(225deg,#04607ae0,#2e045ae0  ) ;
+    cursor: pointer;
+    color: rgba(245, 222, 179, 0.829);
+    box-shadow: -0.1px 0.1px 3px white;
+}   
+
+.row button:hover{
+    color: rgba(245, 222, 179, 0.700);
+    background: linear-gradient(225deg,#04607af0,#2e045af0  ) ;
+    box-shadow: -0.1px 0.1px 2px white;
+}   
+
+ul li{
+    list-style: none;
+    font-size: 16px;
+    padding: 12px 8px 12px 50px;
+    user-select:  none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 14px;
+    left: 8px;
+    background-color: rgba(0, 0, 0, 0.099);
+}
+
+ul li.checked{
+    color: #2b2b2b;
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+
+#Task-container{
+    color: black;
+    font-weight: 900;
+}
+
+ul li:hover{
+    background: rgba(54, 54, 54, 0.159);
+    border-radius: 30px;
+}
+
+ul li span{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    top: 5px;
+    font-size: 30px;
+    color: rgb(36, 0, 0);
+    line-height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    font-style: normal;
+}
+
+ul li span:hover{
+    background: rgba(126, 0, 0, 0.174);
+}
