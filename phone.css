@@ -5,6 +5,8 @@
 
     .row{
         position: relative;
+        display: grid;
+        grid-template-rows: minmax(8px, 100%) repeat(1, 1px);
     }
 
     .row button{
@@ -15,4 +17,9 @@
         font-size: 15px;
         font-weight: 500;
     } 
+
+    /* ul li{
+        display: grid;
+        grid-template-rows: minmax(5px, auto) repeat(2, 5px);
+    } */
 }
