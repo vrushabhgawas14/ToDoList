@@ -41,12 +41,12 @@ TaskContainer.addEventListener("click",function(e){
 
 //to store data for future in browser
 function save_Data() {
-    localStorage.setItem("Data",TaskContainer.innerHTML);
+    localStorage.setItem("Data1",TaskContainer.innerHTML);
 }
 
 // showing stored data when refreshed
 function show_Data(){
-    TaskContainer.innerHTML = localStorage.getItem("Data");
+    TaskContainer.innerHTML = localStorage.getItem("Data1");
 }
 
 // calling show function
